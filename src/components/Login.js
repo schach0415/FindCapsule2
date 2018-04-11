@@ -23,7 +23,7 @@ export default class Login extends Component {
 
   handleSubmit = evt => {
     evt.preventDefault()
-    login(this.state.email, this.state,password)
+    login(this.state.email, this.state.password)
       .catch(error => {
           this.setState(setErrorMsg('Invalid username/password.'))
         })
